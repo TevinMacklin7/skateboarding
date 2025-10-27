@@ -10,7 +10,8 @@
 	}  body {
 		background: black;
 	} #page {
-		width: 928px;
+		max-width: 928px;
+		width: 100%;
 		height: auto;
 		background: aquamarine;
 		border: 10px solid dimgray;
@@ -78,7 +79,46 @@
 		border: 10px outset skyblue;
 		box-shadow: none;
 		float: none;
-	}
+	} @media only screen and (max-width: 750px) {
+  body {
+    font-size: 18pt;
+    line-height: 1.6em;
+  }  #page {
+    padding: 20px;
+  } p {
+    font-size: 18pt;
+    line-height: 1.6em;
+    width: 100%;
+    margin: 18px auto;
+  }img, #banner {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 10px 0;
+  } h1 {
+    font-size: 38pt;
+    text-align: center;
+    margin: 1px auto;
+  } h2 {
+    font-size: 26pt;
+    text-align: center;
+    margin: 30px auto;
+  } h3 {
+    font-size: 22pt;
+    text-align: center;
+    margin: 30px auto;
+  }	ul {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+	 float: right;
+  } li {
+    font-size: 12pt;
+    height: auto;
+    padding: 1px;
+  }
+}
+
 </style>
 </head>	
 <body>
