@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>animation</title>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
+<style> 
+	   * {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
+	}  body {
+        background: black;
+	} h1 {
+        font: 54pt/1.4em 'Fugaz One';
+        text-align: center;
+        color: transparent;
+        background: linear-gradient(135deg, rgba(127,255,212,1) 0%, rgba(224,255,255,0.8) 100%);
+        background-clip: text;
+        width: 825px;
+        margin: 48px auto 24px auto;
+    } h2 {
+        font: 25pt/1.4em 'Fugaz One';
+        text-align: center;
+        color: transparent;
+        background: linear-gradient(135deg, rgba(127,255,212,1) 0%, rgba(224,255,255,0.8) 100%);
+        background-clip: text;
+        width: 825px;
+        margin: 48px auto 24px auto;
+    } #banner {
+       height: 800px;
+		width: 98%;
+		margin: auto;
+		margin-top: 10px;
+		border: 10px outset skyblue;
+		box-shadow: none;
+		float: none;
+	} banner:hover {
+        filter: brightness(1.08);
+        transition: opacity 0.5s;
+    } banner:active {
+        transform: scale(1.50);
+		transition: transform 0.75s; 
+	} p {
+        font: 18pt/1.5em 'roboto condensed';
+        color: white;
+        width: 70ch;
+        margin: 48px auto;
+    } p.callout {
+        font: italic bold 25pt/1.4em 'roboto condensed';
+        width: 754px;
+        padding: 2px;
+        color: mediumaquamarine;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        height: 40px;
+        list-style: none;
+        background: aquamarine;
+        font: 14pt/2em 'Roboto Condensed';
+		color: black;
+        text-align: center;
+        border: 4px solid dimgray;
+        border-radius: 20px;
+    } ul {
+        width: 900px;
+        height: 80px;
+        margin: 72px auto;
+        display: grid;
+        grid-template: repeat(2,auto) / repeat(4,200px);
+        gap: 2px;
+    } a li {
+        color: black;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: rgba(131,131,131,1.00);
+	} button {
+		width: 75px;
+		height:75px;
+		border-radius: 50%;
+		font: italic bold 14pt/2em 'Roboto Condensed';
+		background: aquamarine;
+		border: 4px solid dimgray;
+		top: 650px;
+		left: 10px;
+		position: relative;
+		display: block;
+		cursor: pointer;
+	} #thrash {
+		width: 150px;
+		height: auto;
+		z-index: 2;		
+		position: relative;
+		top: 500px;
+		left: 1px;
+		animation-name: skate;
+		animation-duration: 10s;
+		animation-fill-mode: both;
+		animation-timing-function: linear;
+		animation-play-state: running;
+		animation-iteration-count: infinite;
+	} #thrash:active {
+		animation-play-state: running;
+	} @keyframes skate {
+  0%   { left: 2px; top: 600px; }
+  10%  { top: 580px; }
+  30%  { top: 490px; }  /* Ollie peak */
+  40%  { top: 540px; }
+  50%  { top: 540px; }
+  60%  { top: 540px; }
+  70%  { top: 540px; }
+  80%  {top: 480px; }	
+  100% { left: 1920px; top: 535px; }
+	} #bg {
+		width: 1920px;
+		height: 768px;
+		margin: 0 auto;
+		background: url("city.jpg");
+		background-size: cover; 
+	} .small { 
+		width: 400px;
+		float: right;
+		margin: -50px 290px 40px 60px;
+		border: 10px outset skyblue;
+		box-shadow: 2px 3px 6px;
+	} img:hover {
+        filter: brightness(1.08);
+        transition: opacity 0.5s;
+    } img:active {
+        transform: scale(1.50);
+        transition: transform 0.75s;
+	} 
+</style>
+</head>
+<body>
+	<h1>Flow State</h1>		
+	<ul> <a href="index.html">
+			<li>Home</li> </a>
+		<a href="video.html">
+			<li>First Push</li> </a>
+		<a href="skaters.html">
+			<li>Concrete Disciples</li></a>
+		<a href="table.html">
+			<li> Sarced Grounds </li> </a>
+		<a href="essentials.html">
+            <li>Essentials</li> </a>
+		<a href="typography.html">
+			<li>G.R.I.N.D.</li> </a>
+		<a href="form.html">
+            <li>Drop a Line</li> </a>
+			<li>Flow State</li></ul>
+	
+	<div id="bg"> 
+	<img id="thrash" src="Thrash.png"> </div>
+	<h2> Where Rhythm Replaces Reason </h2>
+ <p> There’s a moment in every session when the world begins to dissolve. The city’s noise fades into a low hum, the edges of the sidewalk blur, and time stretches into something elastic. You’re no longer calculating, hesitating, or performing—you’re simply moving. The board responds before you even think. Your body knows what to do, and your mind finally gets quiet. This is the flow state. It’s elusive, sacred, and unmistakable. You don’t chase it—it finds you, somewhere between repetition and release
+</p>
+<p> In that state, the board becomes more than wood and grip—it becomes a brushstroke. The street transforms into rhythm. Every push is a beat, every flick a syllable, every carve a phrase in a language only skaters speak. You’re not skating the spot—you’re conversing with it. The ledge doesn’t challenge you; it invites you. The curb doesn’t resist; it responds. Flow is the invisible thread that ties together every trick, every line, every slam that somehow felt beautiful. </p>
+<img class="small" src="hasanzahra.jpg"/> 
+<p class="callout"><span class="open"></span>“ Every push is a beat, every flick a syllable, every carve a phrase in a language only skaters speak.”</p>
+<p> It’s not about landing the trick. It’s about the trance. The way your body loops through motion like muscle memory turned ritual. The way your eyes scan the terrain without thinking, already knowing where your feet will be. Flow is the feeling of being so present that even failure feels like part of the choreography. It’s skating stripped of ego, stripped of outcome—just pure connection. </p>
+<p>There’s a kind of memory that lives in your legs. It’s not stored in words or thoughts—it’s etched into muscle, into repetition, into the way your body leans before your mind catches up. Flow taps into that memory. It’s the reason you can roll up to a spot and know, without thinking, exactly how fast to go, where to pop, how to land. It’s not calculation—it’s recall. A physical archive built from every slam, every sketchy make, every perfect flick. In flow, you’re not just skating—you’re remembering.</p>
+<p> Sometimes flow feels like flight. Not in the sense of leaving the ground, but in the way gravity loosens its grip. You’re still bound to the pavement, but the friction fades. The push feels lighter, the carve feels deeper, and the board hums beneath you like it’s alive. You’re not fighting the terrain—you’re gliding through it. Even the rough spots feel smoother. Even the cracks feel intentional. It’s as if the street is letting you pass, just this once, because you’ve earned it. </p>
+<p>Flow can be fragile. One distraction, one break in rhythm, and it’s gone. A car honks, a foot slips, a thought intrudes—and the trance breaks. But that’s part of its magic. It’s fleeting, rare, and impossible to fake. You can’t force flow. You can only prepare for it—by showing up, by pushing through the warm-up, by listening to the street until it speaks back. And when it does, when everything aligns, it feels like skating is the only thing that ever made sense.</p>
+<p>Some skaters find it in the silence of a solo cruise. Others tap into it mid-session, surrounded by friends and chaos. It can arrive on a hill, in a plaza, or in the middle of a crusty alleyway. It doesn’t care about the spot—it cares about the surrender. The moment you stop trying to control and start letting it happen. That’s when the street opens up. That’s when the board speaks back. That’s when skating becomes something more than movement. It becomes meditation. It becomes memory. It becomes myth. </p>
+	  <img id="banner" src="cottonbro.jpg"/> 
+</body>
+</html>
