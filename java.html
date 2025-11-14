@@ -6,6 +6,11 @@
 <title>java</title>
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script><script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="   crossorigin="anonymous"></script>
+	<script>
+   $(function(){
+       $('#list').sortable(); }); 
+</script>
 <style>
 	* {margin: 0; padding: 0;}
     @font-face {
@@ -43,7 +48,7 @@
         width: 70ch;
         margin: 35px auto;
     }  ul {
-        width: 1234px;
+        width: 100%;
         margin-top: -3px;
     } li {
         width: 16.525%;
@@ -69,7 +74,7 @@
     } a {
         text-decoration: none;
 	} #road {
-        width: auto;
+        width: 1223px;
         height: 324px;
         background: url("cityscape.png");
         animation: road 8s linear 10;
