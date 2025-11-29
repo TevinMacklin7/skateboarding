@@ -6,66 +6,76 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 	<style>
-	*{	margin:10;
-		padding: 10;
-	}  
-	  body {
+	* {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
+	}  body {
 		background: black;
-	} #page {
-		width: 928px;
-		height: 2645px;
-		background: aquamarine;
-		border: 10px solid dimgray;
-		margin: 20px auto;
-		padding: 50px;
-		box-shadow: 2px 3px 6px darkgray;
-	} h1 {	
+    // text-align: center;
+    margin-top: 100px;
+	}#page {
+		width: 1228px;
+		height: 2345px;
+		background: black;
+		margin: 10px auto;
+		padding: 10px;
+  } h1 {	
 		text-align: center;
 		font: 48pt/.9em 'fugaz one';
 		text-shadow: 2px 3px 6px dimgray;
+	  	color: aquamarine;
+	  	margin: 1px auto 30px;
 	} h2 {
-		font: 30pt/.014em 'Roboto condensed';
+		font: bold italic 30pt/.014em 'Roboto condensed';
 		text-align: center;
 		text-shadow: 2px 3px 6px dimgray;
-		margin: 60px auto;
+		margin: 130px auto 50px;
+		color: aquamarine;
 	} h3 {
 		font: 28pt/.9em 'fugaz one';
         text-align: center;
         font-weight: normal;
 		color: black;
     } li {
-        height: 40px;
+        width: 15.545%;
+        height: 35px;
+        float: left;
         list-style: none;
-        background: gray;
-        font: 14pt/2em 'Roboto Condensed';
         text-align: center;
-        border: 4px solid black;
-        border-radius: 20px;
-    } ul {
-        width: 900px;
-        height: 80px;
-        margin: 72px auto;
-        display: grid;
-      grid-template: repeat(2,auto) / repeat(4,200px);
-        gap: 2px;
+        font: bold italic 14pt/1.8em 'Roboto condensed';
+        background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
+        text-decoration: none;
+    } a li:hover {
+        background: dimgray;
+    } li:last-child {
+        border-left: 1px solid black;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    } ul li:hover li {
+        visibility: visible;
     } a {
         text-decoration: none;
     } li:hover, a li:hover {
         background: rgba(131,131,131,1.00);
     } p{
-		font: 14pt/1.4em 'Roboto Condensed';
+		font: 16pt/1.4em 'Roboto Condensed';
 		width:768px;
 		margin: 18px auto;
+		color: whitesmoke;
 	}form {
         width: 600px;
-        height: 1320px;
+        height: 1120px;
         padding: 30px;
         background: dimgray;
         color: white;
         margin: 36px auto;
-        border: 4px outset skyblue;
+        border: 4px outset aquamarine;
         box-shadow: 2px 3px 6px dimgray;
         border-radius: 25px;
         font: 20pt/1.2em 'Roboto Condensed';
@@ -102,9 +112,9 @@
 		
 	} img{ 
 		width: 900px;
-		float: right;
-		margin: 15px 2px 2px 50px;
-		border: 10px outset skyblue;
+		float: left;
+		margin: 15px 100px 2px 130px;
+		border: 10px outset aquamarine;
 		box-shadow: 2px 3px 6px;
 	} img:hover {
         filter: brightness(1.08);
@@ -118,23 +128,26 @@
 <body>
 	<div id="page">
   <h1>Drop a Line</h1>
-	<ul><a href="index.html">
-		<li>Home</li> </a>
-		<a href="video.html">
-			<li>First Push</li> </a>
-		<a href="skaters.html">
-			<li>Concrete Disciples</li></a>
-		<a href="table.html">
-			<li> Sarced Grounds </li> </a>
-		<a href="essentials.html">
-            <li>Essentials</li> </a>
-		<a href="typography.html">
-            <li>G.R.I.N.D.</li> </a>
-		<a href="form.html">
-            <li>Drop a Line</li> </a>
-		<a href="animation.html">
-			<li>Flow State</li>	</a>
-        </ul>
+		 <ul>
+        <a href="index.html">
+        <li>Home</li> </a>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
+       	<a href="table.html">
+        <li>Sacred Grounds</li> </a>
+        <a href="essentials.html">
+        <li>Essentials</li> </a>
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
+             <ul>
+                <a href="animation.html">
+                 <li>Flow State</li> </a>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				  <li>Drop a Line</li>
+			</ul>
+            </li>
+            </ul>
 	<h2> Your Voice Echoed in the Streets </h2>
 	<p>Got a tale from the curb, a legendary spot nomination, or just want to say what’s up? This is your portal. Urban Legends is built on the stories that grip the pavement — waxed ledges, busted decks, and midnight sessions that live on through word of mouth and scraped-up footage. Whether you’re recognizing a skater, nominating a spot, asking a question, or simply checking in, your message helps keep the history rolling. Fill out the form, hit 'Drop It!', and let the streets speak.</p>
 	<form action="https://formsubmit.co/macklt1@unlv.nevada.edu" method="post">
@@ -182,6 +195,7 @@
 	</fieldset>
 	<input type= "submit" value= "Drop It!"  />
     </form> 
+	<p> Every legend starts with a voice, and every voice adds to the chorus of street skating’s story. Urban Legends isn’t just a site—it’s a living archive shaped by the people who push, fall, rise, and ride again. Your words, your memories, your nominations keep the culture alive and raw, reminding us that the streets are more than concrete—they’re community. So drop your line, share your grind, and help write the next chapter of this movement.</p>
 	<img src="pexelsron lach.jpg"/>
 	</div>
 		</body>

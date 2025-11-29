@@ -6,37 +6,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 <style> 
-	{	margin:10;
-		padding: 10;
+	* {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
 	}  body {
 		background: black;
-	} #page {
-		width: 928px;
-		height: auto;
-		background: aquamarine;
-		border: 10px solid dimgray;
-		margin: 20px auto;
-		padding: 50px;
-		box-shadow: 2px 3px 6px darkgray;
-	} h1 {	
+    // text-align: center;
+    margin-top: 100px;
+	}#page {
+		width: 1228px;
+		height: 2345px;
+		background: black;
+		margin: 10px auto;
+		padding: 10px;
+  } h1 {	
 		text-align: center;
 		font: 48pt/.9em 'fugaz one';
 		text-shadow: 2px 3px 6px dimgray;
+	  	color: aquamarine;
+	  margin: 1px auto 30px
 	} h2 {
 		text-align: center;
 		text-shadow: 2px 3px 6px dimgray;
-		font: 30pt/.014em 'Roboto condensed';
-		margin: 50px auto;
+		font: bold italic 30pt/.014em 'Roboto condensed';
+		margin: 130px auto 50px;
+		color: aquamarine
 	} p {
 		margin: 0px auto;
 		width: 80ch;
+		color: whitesmoke;
 		font: 15pt/1.4em 'roboto condensed';
 		text-align: justify;	 
 	} img{ 
-		width: 875px;
+		width: 1275px;
 		float: center;
-		margin: 10px 10px 10px 20px;
-		border: 10px outset skyblue;
+		margin: 10px -28px 10px;
+		border: 10px outset aquamarine;
 		box-shadow: 2px 3px 6px;
 	} img:hover {
         filter: brightness(1.08);
@@ -47,23 +53,28 @@
 	} ul {
         width: 100%;
         margin-top: -4px;
-    } li {
-        height: 40px;
+    }  li {
+        width: 15.545%;
+        height: 35px;
+        float: left;
         list-style: none;
-        background: gray;
-        font: 14pt/2em 'Roboto Condensed';
         text-align: center;
-        border: 4px solid black;
-        border-radius: 20px;
-    } ul {
-        width: 900px;
-        height: 80px;
-        margin: 72px auto;
-        display: grid;
-        grid-template: repeat(2,auto) / repeat(4,200px);
-        gap: 2px;
+        font: bold italic 14pt/1.8em 'Roboto condensed';
+        background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
+        text-decoration: none;
+    } a li:hover {
+        background: dimgray;
+    } li:last-child {
+        border-left: 1px solid black;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    } ul li:hover li {
+        visibility: visible;
     } a {
         text-decoration: none;
     } li:hover, a li:hover {
@@ -72,7 +83,7 @@
 		font: 14pt/1.4em 'Roboto condensed';
 		margin: 48px auto;
 		text-align: center;
-		border: 15px outset skyblue;
+		border: 15px outset aquamarine;
 		box-shadow: 2px 3px 6px gray;
 	}td, th {
 		padding: 10px 30px;
@@ -98,21 +109,26 @@
 	<div id="page">
   <h1>Sacred Grounds</h1>
 	<ul>
+	 <ul>
 		<a href="index.html">
-            <li>Home</li> </a>
-		<a href="video.html">
-			<li>First Push</li> </a>
-		<a href="skaters.html">
-			<li>Concrete Disciples</li></a>
-		<li> Sarced Grounds </li>
-		<a href="essentials.html">
-            <li>Essentials</li> </a>
-		<a href="typography.html">
-            <li>G.R.I.N.D.</li> </a>
-		<a href="form.html">
-            <li>Drop a Line</li> </a>
-		<a href="animation.html">
-			<li>Flow State</li>	</a>
+        <li>Home</li> </a>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
+        <li>Sacred Grounds</li>
+        <a href="essentials.html">
+        <li>Essentials</li> </a>
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
+             <ul>
+                <a href="animation.html">
+                 <li>Flow State</li> </a>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				 <a href="form.html">
+                 <li>Drop a Line</li> </a>
+			</ul>
+            </li>
+            </ul>
 		</ul>
 	<h2> Skateboarding’s Holy Sites </h2>
 		<p> Welcome to Sacred Grounds—your global guide to the most iconic terrain in street skating history. From marble plazas in Barcelona to stair-heavy chaos in São Paulo, this curated list maps out 20 legendary spots that shaped the culture, defined the style, and tested the limits of what’s possible on four wheels. It's kind of like urban architecture that turns everyday cityscapes into skateboarding folklore. Whether you're chasing lines, documenting skate footy, or just soaking in the hype, this is where the story begins. There's sunlit plazas and gritty underpasses, each spot on this list carries its own hype, its own history, and its own reason for being sacred. No parks. No pads. Just pure street.

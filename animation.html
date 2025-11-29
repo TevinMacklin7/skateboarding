@@ -6,12 +6,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 <style> 
-	   * {margin: 0; padding: 0;}
+	* {margin: 0; padding: 0;}
     @font-face {
         font-family: 'fugaz one';
         src: url(FugazOne-Regular.ttf";)
 	}  body {
-        background: black;
+		background: black;
+    // text-align: center;
+    margin-top: 100px;
 	} h1 {
         font: 54pt/1.4em 'Fugaz One';
         text-align: center;
@@ -20,22 +22,20 @@
         background-clip: text;
         width: 825px;
         margin: 48px auto 24px auto;
-    } h2 {
-        font: 25pt/1.4em 'Fugaz One';
-        text-align: center;
-        color: transparent;
-        background: linear-gradient(135deg, rgba(127,255,212,1) 0%, rgba(224,255,255,0.8) 100%);
-        background-clip: text;
-        width: 825px;
-        margin: 48px auto 24px auto;
-    } #banner {
+    }h2 {
+		font: bold italic 30pt/.014em 'Roboto condensed';
+		text-align: center;
+		text-shadow: 2px 3px 6px dimgray;
+		margin: 80px auto 50px;
+		color: aquamarine;
+	} #banner {
        height: 800px;
-		width: 98%;
-		margin: auto;
+		width: 1500px;
+		margin: auto 230px auto 450px;
 		margin-top: 10px;
 		border: 10px outset skyblue;
 		box-shadow: none;
-		float: none;
+		float: left;
 	} banner:hover {
         filter: brightness(1.08);
         transition: opacity 0.5s;
@@ -46,7 +46,7 @@
         font: 18pt/1.5em 'roboto condensed';
         color: white;
         width: 70ch;
-        margin: 48px auto;
+        margin: 38px auto 48px;
     } p.callout {
         font: italic bold 25pt/1.4em 'roboto condensed';
         width: 754px;
@@ -56,23 +56,29 @@
         width: 100%;
         margin-top: -4px;
     } li {
-        height: 40px;
+        width: 15.545%;
+        height: 35px;
+        float: left;
         list-style: none;
-        background: aquamarine;
-        font: 14pt/2em 'Roboto Condensed';
-		color: black;
         text-align: center;
-        border: 4px solid dimgray;
-        border-radius: 20px;
-    } ul {
-        width: 900px;
-        height: 80px;
-        margin: 72px auto;
-        display: grid;
-        grid-template: repeat(2,auto) / repeat(4,200px);
-        gap: 2px;
+        font: bold italic 14pt/1.8em 'Roboto condensed';
+        background: aquamarine;
+		border: 6px outset dimgray;
+		left: 50px;
+		position: relative;
     } a li {
         color: black;
+        text-decoration: none;
+    } a li:hover {
+        background: dimgray;
+    } li:last-child {
+        border-left: 1px solid black;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    } ul li:hover li {
+        visibility: visible;
     } a {
         text-decoration: none;
     } li:hover, a li:hover {
@@ -117,7 +123,7 @@
 	} #bg {
 		width: 1920px;
 		height: 768px;
-		margin: 0 auto;
+		margin: 100px auto 10px;
 		background: url("city.jpg");
 		background-size: cover; 
 	} .small { 
@@ -137,22 +143,26 @@
 </head>
 <body>
 	<h1>Flow State</h1>		
-	<ul> <a href="index.html">
-			<li>Home</li> </a>
-		<a href="video.html">
-			<li>First Push</li> </a>
-		<a href="skaters.html">
-			<li>Concrete Disciples</li></a>
-		<a href="table.html">
-			<li> Sarced Grounds </li> </a>
-		<a href="essentials.html">
-            <li>Essentials</li> </a>
-		<a href="typography.html">
-			<li>G.R.I.N.D.</li> </a>
-		<a href="form.html">
-            <li>Drop a Line</li> </a>
-			<li>Flow State</li></ul>
-	
+			 <ul>
+        <a href="index.html">
+        <li>Home</li> </a>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
+       	<a href="table.html">
+        <li>Sacred Grounds</li> </a>
+        <a href="essentials.html">
+        <li>Essentials</li> </a>
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
+             <ul>
+                <a href="animation.html">
+                 <li>Flow State</li> </a>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				  <li>Drop a Line</li>
+			</ul>
+            </li>
+            </ul>
 	<div id="bg"> 
 	<img id="thrash" src="Thrash.png"> </div>
 	<h2> Where Rhythm Replaces Reason </h2>

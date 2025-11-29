@@ -6,10 +6,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 <style>
-	{	margin:10;
-		padding: 10;
+		* {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
 	}  body {
 		background: black;
+    // text-align: center;
+    margin-top: 100px;
+	}#page {
+		width: 1228px;
+		height: 1945px;
+		background: black;
+		margin: 10px auto;
+		padding: 10px;
+  }
 	} #container{
 		width: 1210px;
 		height 1090px;
@@ -18,11 +29,11 @@
 		display: flex;
 		justify content: center;
 		align-items: flex-start;
-		background: aquamarine
+		background: white; 
 	} img {
 		width: 325px;
 		height: 200px;
-		border: 10px outset skyblue;
+		border: 10px outset aquamarine;
 	}  img:hover {
         filter: brightness(1.08);
         transition: opacity 0.5s;
@@ -37,56 +48,57 @@
 		font: italic bold 16pt/1.4em 'roboto condensed';
 		text-align: center;
 		margin: 15px 36px
-	} #page {
-		width: 1210px;
-		height: auto;
-		background: aquamarine;
-		border: 10px solid dimgray;
-		margin: 20px auto;
-		padding: 50px;
-		box-shadow: 2px 3px 6px darkgray;
 	} h1 {	
 		text-align: center;
 		font: 48pt/.9em 'fugaz one';
+		color: aquamarine;
 		text-shadow: 2px 3px 6px dimgray;
+		margin: 1px auto 30px
 	} h2 {
 		text-align: center;
 		text-shadow: 2px 3px 6px dimgray;
-		font: 30pt/.014em 'Roboto condensed';
-		margin: 50px auto;
+		color: aquamarine;
+		font: bold italic 30pt/.014em 'Roboto condensed';
+		margin: 140px auto 30px;
 	} h3 {
-		font: Bold 18pt/1.4em 'roboto condensed';
+		font: Bold 20pt/1.4em 'roboto condensed';
 		text-align: center;
+		color: aquamarine;
+		margin: 30px auto 20px;
 		text-shadow: 2px 3px 6px dimgray;
 	} p {
-		margin: 10px auto 20px auto;
+		margin: 10px auto 40px auto;
 		width: 80ch;
-		font: 18pt/1.4em 'roboto condensed';
+		color: whitesmoke;
+		font: 16pt/1.4em 'roboto condensed';
 		text-align: justify;	
 	} p2 {
-		font: 14pt/1.4em 'roboto condensed';
+		font: 16pt/1.4em 'roboto condensed';
 		text-align: center;	
-	} ul {
-        width: 100%;
-        margin-top: -4px;
-    }  li {
-        height: 40px;
+		color: whitesmoke;
+	} li {
+        width: 15.545%;
+        height: 35px;
+        float: left;
         list-style: none;
-        background: gray;
-        font: 14pt/2em 'Roboto Condensed';
         text-align: center;
-        border: 4px solid black;
-        border-radius: 20px;
-    } ul {
-        width: 900px;
-        height: 80px;
-        margin: 72px auto;
-        display: grid;
-       grid-template: repeat(2,auto) / repeat(4,200px);
-        gap: 2px;
+        font: bold italic 14pt/1.8em 'Roboto condensed';
+        background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
-    } a {
+        text-decoration: none;
+    } a li:hover {
+        background: dimgray;
+    } li:last-child {
+        border-left: 1px solid black;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    } ul li:hover li {
+        visibility: visible;
+    }  a {
         text-decoration: none;
     } a li:hover {
 		background: color: skyblue;
@@ -95,7 +107,8 @@
 		width: 98%;
 		margin: auto;
 		margin-top: 10px;
-		border: 10px outset skyblue;
+		margin-bottom: 10px;
+		border: 10px outset aquamarine;
 		box-shadow: none;
 		float: none;
 	} #textbox {
@@ -109,21 +122,26 @@
 	<body> <div id="page">
   <h1>Concrete Disciples</h1>
 	<ul>
+		 <ul>
 		<a href="index.html">
-	  <li>Home</li> </a>
-		<a href="video.html">
-		<li>First Push</li> </a>
-			<li>Concrete Disciples</li>
-		<a href="table.html">
-			<li> Sarced Grounds </li> </a>
-		<a href="essentials.html">
-            <li>Essentials</li> </a>
-		<a href="typography.html">
-            <li>G.R.I.N.D.</li> </a>
-		<a href="form.html">
-            <li>Drop a Line</li> </a>
-		<a href="animation.html">
-			<li>Flow State</li>	</a>
+        <li>Home</li> </a>
+         <li>Concrete Disciples</li>
+       	<a href="table.html">
+        <li>Sacred Grounds</li> </a>
+        <a href="essentials.html">
+        <li>Essentials</li> </a>
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
+             <ul>
+                <a href="animation.html">
+                 <li>Flow State</li> </a>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				 <a href="form.html">
+                 <li>Drop a Line</li> </a>
+			</ul>
+            </li>
+            </ul>
 		</ul>
 		<h2> Street Skating’s Sacred Lineage</h2>
 		<p> Concrete Disciples honors the visionaries who transformed street skating from a fringe activity into a global culture. It celebrates those who saw potential in pavement, who turned curbs, rails, and loading docks into stages for creativity and defiance. These skaters didn’t follow paths—they carved them, inspiring generations to view the urban landscape as a playground of possibility. Their influence echoes in every trick, every DIY spot, and every skater who chooses expression over convention. By pushing boundaries and embracing risk, they laid the groundwork for a movement that’s as much about identity and resilience as it is about style. Their legacy lives not just in footage, but in the spirit of every rider who dares to reinterpret the streets.</p>

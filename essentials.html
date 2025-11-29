@@ -6,76 +6,89 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 <style>
-	{	margin:10;
-		padding: 10;
+	* {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
 	}  body {
 		background: black;
-	} #page {
-		width: 928px;
-		height: auto;
-		background: aquamarine;
-		border: 10px solid dimgray;
-		margin: 20px auto;
-		padding: 50px;
-		box-shadow: 2px 3px 6px darkgray;
-	} h1 {	
+    // text-align: center;
+    margin-top: 100px;
+	}#page {
+		width: 1228px;
+		height: 2545px;
+		background: black;
+		margin: 10px auto;
+		padding: 10px;
+  } h1 {	
 		text-align: center;
 		font: 48pt/.9em 'fugaz one';
 		text-shadow: 2px 3px 6px dimgray;
+	  	color: aquamarine;
+	  	margin: 10px auto 30px
 	} h2 {
 		font: 30pt/.014em 'Roboto condensed';
 		text-align: center;
 		text-shadow: 2px 3px 6px dimgray;
 		margin: 60px auto 30px auto;
+		color: whitesmoke;
+		margin: 130px auto 40px
 	} h3 {
-		font: italic 25pt/.014em 'Roboto condensed';
-		margin: 50px 30px 1px 70px;
+		font: bold italic 28pt/.014em 'Roboto condensed';
+		margin: 50px 190px 1px 210px;
 		text-align: left;
 		padding-bottom: 20px;
+		color: aquamarine;
 	} ul {
         width: 100%;
         margin-top: -4px;
     } li {
-        height: 40px;
+        width: 15.545%;
+        height: 35px;
+        float: left;
         list-style: none;
-        background: gray;
-        font: 14pt/2em 'Roboto Condensed';
         text-align: center;
-        border: 4px solid black;
-        border-radius: 20px;
-    } ul {
-        width: 900px;
-        height: 80px;
-        margin: 72px auto;
-        display: grid;
-         grid-template: repeat(2,auto) / repeat(4,200px);
-        gap: 2px;
+        font: bold italic 14pt/1.8em 'Roboto condensed';
+        background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
-    } a {
+        text-decoration: none;
+    } a li:hover {
+        background: dimgray;
+    } li:last-child {
+        border-left: 1px solid black;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    } ul li:hover li {
+        visibility: visible;
+    }a {
         text-decoration: none;
     } li:hover, a li:hover {
         background: rgba(131,131,131,1.00);
     } #banner { 
-		height: 500px;
-		width: 98%;
-		margin: auto;
+		height: 600px;
+		width: 950px;
+		margin: auto 120px;
 		margin-top: 10px;
-		border: 10px outset skyblue;
+		border: 10px outset aquamarine;
 		box-shadow: none;
 		float: none;
 	} p {
-		margin: 0px auto;
+		margin: 0px 210px;
 		width: 80ch;
 		font: 15pt/1.4em 'roboto condensed';
 		text-align: justify;	
 		padding-top: 10px; 
+		color: whitesmoke;
 	} #picturebox {
         width: 828px;
         height: 920px;
 		background: gray;
-		border: 10px outset skyblue;
-        margin: 36px;
+		border: 10px outset aquamarine;
+        margin: 36px 150px;
         display: grid;
         grid-template: repeat(3,auto) / repeat(3,auto);
         justify-content: space-evenly;
@@ -105,24 +118,26 @@
 <body>
 <div id="page">
   <h1>Essentials</h1>
-	<ul>
-		<a href="index.html">
-            <li>Home</li> </a>
-		<a href="video.html">
-			<li>First Push</li></a>
-		<a href="skaters.html">
-		<li>Concrete Disciples</li> </a>
-		<a href="table.html">
-			<li> Sarced Grounds </li> </a>
-		<a href="essentials.html">
-            <li>Essentials</li> </a>
-		<a href="typography.html">
-            <li>G.R.I.N.D.</li> </a>
-		<a href="form.html">
-            <li>Drop a Line</li> </a>
-		<a href="animation.html">
-			<li>Flow State</li>	</a>
-        </ul>
+ <ul>
+        <a href="index.html">
+        <li>Home</li> </a>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
+       	<a href="table.html">
+        <li>Sacred Grounds</li> </a>
+        <li>Essentials</li> 
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
+             <ul>
+                <a href="animation.html">
+                 <li>Flow State</li> </a>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				 <a href="form.html">
+                 <li>Drop a Line</li> </a>
+			</ul>
+            </li>
+            </ul>
 	  <h2> Tools of the Trade </h2>
 	 <img id= "banner" src="tools2.png"/>
 	<h3> The Setup</h3>
@@ -156,6 +171,9 @@
         <figcaption style="grid-area: 6/3;">CAMERA<br/> 
 		<p2>Trick Sniping Third Eye.</p2></figcaption>
     </div>
+	<p>Every skater knows the ritual of breaking in gear the first pop of a new deck, the squeak of fresh bearings, the scuff of untouched grip tape. These moments aren’t just mechanical; they’re ceremonial. The board becomes an extension of the body, the shoes mold to the rhythm of each flick, and the trucks loosen or tighten to match the skater’s style. What looks like wear and tear to outsiders is, to skaters, the process of bonding with their tools, shaping them into something personal and alive. </p>
+	<p> And when the gear finally gives out, when the deck snaps mid session, or the wheels refuse to roll straight it doesn’t vanish into obscurity. It becomes part of the mythology. Broken boards hang on bedroom walls like trophies, shredded shoes sit in closets as reminders of battles fought, and scarred rails bear witness to countless attempts. These artifacts aren’t discarded; they’re archived in memory and culture, proof that the grind was real and the journey was worth every slam. </p>
+
 	</div>
 </body>
 </html>

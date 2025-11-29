@@ -34,15 +34,13 @@
         background-clip: text;
         width: 825px;
         margin: 8px auto 24px auto;
-    } h2 {
-        font: 25pt/1.4em 'Fugaz One';
-        text-align: center;
-        color: transparent;
-        background: linear-gradient(135deg, rgba(127,255,212,1) 0%, rgba(224,255,255,0.8) 100%);
-        background-clip: text;
-        width: 825px;
-        margin: 48px auto 24px auto;
-    } p {
+    }  h2 {
+		font: bold italic 30pt/.014em 'Roboto condensed';
+		text-align: center;
+		text-shadow: 2px 3px 6px dimgray;
+		margin: 80px auto 50px;
+		color: aquamarine;
+	} p {
         font: 18pt/1.5em 'roboto condensed';
         color: white;
         width: 70ch;
@@ -51,13 +49,14 @@
         width: 100%;
         margin-top: -3px;
     } li {
-        width: 16.525%;
+        width: 15.525%;
         height: 35px;
         float: left;
         list-style: none;
         text-align: center;
         font: bold italic 14pt/1.8em 'Roboto condensed';
         background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
         text-decoration: none;
@@ -78,12 +77,13 @@
         height: 324px;
         background: url("cityscape.png");
         animation: road 8s linear 10;
+		margin: 100px auto
   } /* Motorcycle image position */
     #motorcycle {
         position: relative;
 		height: 100px;
 		width: 100px;
-        top: 115px;
+        top: 149px;
 		left: 300px;
         transition: transform 0.5s ease;
   } #jump {
@@ -92,7 +92,7 @@
       border-radius: 50%;
       background: aquamarine;
 	  position: relative;
-	  top: 210px;
+	  top: 233px;
 	  left: 30px;
       display: block;
 	  font: 12pt/2em 'fugaz one';      
@@ -109,26 +109,26 @@
         0% {background-position: 0 0;}
         100% {background-position: -1884px 0;}
     } h3 {
-        font: 30pt/1.4em 'Fugaz One';
+        font: 28pt/1.4em 'Fugaz One';
         text-align: center;
         color: aquamarine;
         background-clip: text;
         width: 825px;
         margin: 40px auto 2px auto;
     } h4 {
-        font: 18pt/1.4em 'Fugaz One';
+        font: 20pt/1.4em 'Fugaz One';
         text-align: center;
         color: white;
         background-clip: text;
         width: 825px;
-        margin: 15px auto 8px auto;
+        margin: 10px auto 8px auto;
     } #container {
         width: 320px;
         height: 256px;
         background: black;
         border-radius: 12px;
         margin: 24px 340px;
-        font: bold italic 18pt/1.4em 'Roboto condensed';
+        font: bold italic 22pt/1.4em 'Roboto condensed';
         display: grid;
         grid-template: repeat(4, 64px) / auto auto;
     } #list {
@@ -165,26 +165,23 @@
 <body>
 <div id="page">
 	<h1>Skate Cycle</h1>		
-	 <ul>
+	<ul>
 		<a href="index.html">
-        <li>Home</li> </a>
-        <a href="video.html">
-        <li>First Push</li> </a>
-       	<a href="skaters.html">
-        <li>Concrete Disciples</li> </a>
+			<li>Home</li> </a>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
        	<a href="table.html">
         <li>Sacred Grounds</li> </a>
         <a href="essentials.html">
         <li>Essentials</li> </a>
-            <li>Extras
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
              <ul>
-                 <a href="typography.html">
-				 <li>G.R.I.N.D.</li> </a>
-                 <a href="form.html">
-                 <li>Drop a Line</li> </a>
-                 <a href="animation.html">
+                <a href="animation.html">
                  <li>Flow State</li> </a>
-				 <li>Skate Cycle</li>
+					 <li>Skate Cycle</li>
+				 <a href="form.html">
+                 <li>Drop a Line</li> </a>
 			</ul>
             </li>
             </ul>

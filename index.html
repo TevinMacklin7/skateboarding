@@ -5,46 +5,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png" sizes="96x96"/>
 <style>
-	{	margin:10;
-		padding: 10;
+	* {margin: 0; padding: 0;}
+    @font-face {
+        font-family: 'fugaz one';
+        src: url(FugazOne-Regular.ttf";)
 	}  body {
-		background: aquamarine;
-	} #page {
-		max-width: 928px;
-		width: 100%;
-		height: auto;
 		background: black;
-		border: 10px solid dimgray;
-		margin: 20px auto;
-		padding: 50px;
-		box-shadow: 2px 3px 6px darkgray;
-	} h1 {	
+    // text-align: center;
+    margin-top: 100px;
+	}#page {
+		width: 1228px;
+		height: 2345px;
+		background: black;
+		margin: 10px auto;
+		padding: 10px;
+  } h1 {	
 		text-align: center;
 		font: 48pt/.9em 'fugaz one';
 		color: aquamarine;
 		text-shadow: 2px 3px 6px dimgray;
+	  	margin: 0px auto 30px;
 	} h2 {
 		font: 30pt/.014em 'Roboto condensed';
 		text-align: center;
-		color: skyblue;
+		color: whitesmoke;
 		text-shadow: 2px 3px 6px dimgray;
-		margin: 130px auto;
+		margin: 130px auto 50px;
 	} h3 {
-		font: italic 25pt/.014em 'Roboto condensed';
+		font: bold italic 28pt/.014em 'Roboto condensed';
 		text-align: left;
-		margin: 60px auto 40px;
+		margin: 60px 130px 40px;
 		color: aquamarine;
 		padding-left: 75px;
+	}  video {
+		margin: 10px auto;
+		display: block;
+		box-shadow: 2px 3px 6px dimgray;
+		border: 10px solid aquamarine;
 	} p{
-		font: 14pt/1.4em 'Roboto Condensed';
+		font: 16pt/1.4em 'Roboto Condensed';
 		width:768px;
 		color: white;
-		margin: 18px auto;
+		margin: 18px 210px;
 	} img{ 
 		width: 250px;
+		height: 400px;
 		float: right;
-		margin: 2px 2px 2px 50px;
-		border: 10px outset skyblue;
+		margin: 30px 2px 1px 50px;
+		border: 10px outset aquamarine;
 		box-shadow: 2px 3px 6px;
 	} img:hover {
         filter: brightness(1.08);
@@ -59,13 +67,14 @@
         width: 100%;
         margin-top: -3px;
     } li {
-        width: 16.545%;
+        width: 15.545%;
         height: 35px;
         float: left;
         list-style: none;
         text-align: center;
         font: bold italic 14pt/1.8em 'Roboto condensed';
         background: aquamarine;
+		border: 6px outset dimgray;
     } a li {
         color: black;
         text-decoration: none;
@@ -85,10 +94,9 @@
         background: rgba(131,131,131,1.00);
     } #banner { 
 		height: 450px;
-		width: 98%;
-		margin:-80px auto 1px;
-		
-		border: 10px outset skyblue;
+		width: 928px;
+		margin: 30px 100px;
+		border: 10px outset aquamarine;
 		box-shadow: none;
 		float: none;
     } @media only screen and (max-width: 750px) {
@@ -142,34 +150,38 @@
 <div id="page">
   <h1>Urban Legends</h1>
 		 <ul>
-		<a href="index.html">
-        <li>Home</li> </a>
-        <a href="video.html">
-        <li>First Push</li> </a>
-       	<a href="skaters.html">
-        <li>Concrete Disciples</li> </a>
+        <li>Home</li>
+        <a href="skaters.html">
+         <li>Concrete Disciples</li> </a>
        	<a href="table.html">
         <li>Sacred Grounds</li> </a>
         <a href="essentials.html">
         <li>Essentials</li> </a>
-            <li>Extras
+    <a href="typography.html">
+				 <li>G.R.I.N.D.</li> </a>        <li>Extras
              <ul>
-                 <a href="typography.html">
-				 <li>G.R.I.N.D.</li> </a>
-                 <a href="form.html">
-                 <li>Drop a Line</li> </a>
-                 <a href="animation.html">
+                <a href="animation.html">
                  <li>Flow State</li> </a>
-				 <li>Skate Cycle</li>
+				 <a href="java.html">
+					 <li>Skate Cycle</li> </a>
+				 <a href="form.html">
+                 <li>Drop a Line</li> </a>
 			</ul>
             </li>
             </ul>
 	<h2> The Untamed History of Street Skating </h2>
-  <img id="banner" src="artyom-lisov unsplash.jpg"/> 
+  	<video width="360" height="640" controls poster="poster-urbanlegends.jpg">
+    <source src="urbanlegends-youtube.mp4"/>
+</video> 
 	  <h3> Carved in Concrete </h3>
 <p><img src="leonor-oomunsplash.jpg"/> Street skating didn’t ask for permission it carved its legacy into curbs, handrails, and city plazas. What started as sidewalk surfing in post-war California evolved into a global movement defined by creativity, defiance, and the raw poetry of motion. This site is a tribute to that journey: the tricks, the spots, the skaters, and the culture that turned pavement into playground. </p>
 <p> From the first ollie popped on asphalt to the iconic video parts that reshaped skateboarding’s soul, we trace the evolution of street skating through decades of innovation and rebellion. You’ll find stories of legendary spots like LOVE Park and MACBA, deep dives into trick origins, and snapshots of the gear that shaped generations. It’s not just history—it’s mythology written in grip tape and concrete dust.</p>
 <p> Whether you’re a lifelong skater, a curious newcomer, or just someone who respects the art of turning architecture into adrenaline, this is your portal into the roots of street skating. No contests, no gloss—just the grind, the grit, and the glory.</p>
+<p> Before skateparks, sponsorships, and viral clips, street skating was born in the cracks of the city—where pavement met purpose. It wasn’t just about tricks; it was about claiming space, rewriting rules, and turning overlooked architecture into a canvas. Curbs became launchpads. Handrails became challenges. Every slab of concrete held potential, and every skater brought their own rhythm to the rebellion. In neighborhoods where conformity ruled, skating offered a way to move differently, think differently, be different. It was purpose with grip tape: raw, loud, and unapologetically creative
+</p>
+<p> “Where the pavement met purpose” is more than a tagline—it’s the heartbeat of a movement. It speaks to the skaters who saw beauty in the brutal, who turned sidewalks into stages and stair sets into statements. It honors the DIY spirit, the late-night sessions, the bruises that became badges. This is where history lives—not in polished arenas, but in the worn-down ledges and graffiti-tagged banks that shaped a culture. It’s where legends were made not by medals, but by moments. And it’s where your site, Urban Legends, finds its soul.
+</p>	
+	<img id="banner" src="artyom-lisov unsplash.jpg"/>
 </div>
 </body>
 </html>
